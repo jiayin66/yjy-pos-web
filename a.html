@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <style ></style>
+</head>
+<body>
+<canvas id="c" width="400" height="400" style="background-color: #666666"></canvas>
+<script>
+   var c=document.getElementById("c").getContext("2d");
+   console.log(c)
+  /* c.fillStyle="#f00";
+    c.fillRect(0,0,100,100)
+    c.fillRect(300,0,100,100)
+    c.fillRect(0,300,100,100)
+    c.fillRect(300,300,100,100)*/
+
+//   c.fillText("我是鄢家银",100,100)
+
+
+ /*  c.beginPath()
+   //c.moveTo(50,50);
+   c.moveTo(0,0);
+   c.fillStyle="#f00";
+   c.lineTo(100,100);
+   c.lineTo(50,500);
+   c.closePath()
+  c.stroke();
+  //c.fill();*/
+   c.strokeStyle="#f00";
+  c.arc(100,100,100,0*(Math.PI/180),90*(Math.PI/180))
+  c.fill()
+  c.stroke();
+
+
+
+</script>
+</body>
+</html>

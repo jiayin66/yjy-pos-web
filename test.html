@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="static/echarts.min.js"></script>
+</head>
+<body>
+  <!--<div id="mychar" style="width: 300px;height: 300px" ></div>
+  <script>
+    var mychar=document.getElementById("mychar");
+
+  </script>-->
+
+
+  <div id="mychar" style="width:200px;height:200px;"></div>
+  <script>
+    var e1=document.getElementById("mychar");
+    console.log(e1)
+    console.log(echarts)
+    var mychart1= echarts.init(e1);
+    var option={
+      title:{text:'测试统计'},
+      xAxis:{data:['a','b']},
+      yAxis:{},
+      series:[{
+        type:"bar",
+        data:[100,20]}
+      ]}
+
+    mychart1.setOption(option)
+
+
+  </script>
+</body>
+</html>
